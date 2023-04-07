@@ -22,6 +22,10 @@ body .anchor-link-active{
   box-sizing: border-box;
   *{
     box-sizing: border-box;
+    font-size: revert;
+    font-weight: revert;
+    margin: revert;
+    padding: revert;
   }
   transform: translate(-50%,-50%);
   border-radius: 20px;
