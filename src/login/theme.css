@@ -1,0 +1,21 @@
+:root{
+    --fontColor-dark: #FFF;
+    --secondFontColor-dark:#616162;
+    --background-dark: #1a1b1f;
+    --walletBtn-dark: #3898ff;
+    --line-dark: #ffffff50;
+
+
+    --fontColor-light: #000000;
+    --secondFontColor-light:#3c3c3c;
+    --background-light: #ffffff;
+    --walletBtn-light: #3898ff;
+    --line-light: rgb(0 0 0 / 50%);
+
+
+    --fontColor: var(--fontColor-dark);
+    --secondFontColor: var(--secondFontColor-dark);
+    --background: var(--background-dark);
+    --walletBtn: var(--walletBtn-dark);
+    --line: var(--line-dark);
+}
