@@ -12,7 +12,6 @@ const Modal = () => {
     return(
       <>
       <div>
-        <div className="App">
             <div style={!context.modal ? {top: '200%'} : {}}  className='login-div'>
               <button className='close-login-div' onClick={context.closeModal}>
                 <p></p>
@@ -151,7 +150,6 @@ const Modal = () => {
                 : ''}
               </div>
             </div> 
-        </div>
       </div>
       </>
     )

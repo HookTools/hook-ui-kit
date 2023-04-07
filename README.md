@@ -94,3 +94,5 @@ const App = () => {
 }
 export default App
 ```
+
+Example: https://github.com/HookTools/hook-ui-kit-example

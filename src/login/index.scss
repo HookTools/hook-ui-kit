@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Montserrat', sans-serif;
-  background: black;
-}
-*{
-  box-sizing: border-box;
-}
 
 $fontColor: var(--fontColor);
 $secondFontColor: var(--secondFontColor);
@@ -18,14 +8,21 @@ $walletBtn: var(--walletBtn);
 $line: var(--line);
 $width: 650px;
 $height: 450px;
+
 body .anchor-link-active{
   display: none !important;
 }
+
 .login-div{
+  font-family: 'Montserrat', sans-serif;
   position: fixed;
   left: 50%;
   top: 50%;
   z-index: 9999999 !important;
+  box-sizing: border-box;
+  *{
+    box-sizing: border-box;
+  }
   transform: translate(-50%,-50%);
   border-radius: 20px;
 
