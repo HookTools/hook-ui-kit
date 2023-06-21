@@ -11,7 +11,7 @@ interface HookProvider{
   children: any,
   network: 'mainnet' | 'testnet',
   colorMode?: 'dark' | 'light',
-  api?: 'string'
+  api?: string
 }
 
 interface Data{
@@ -35,6 +35,10 @@ const HookProvider = ({children,network,colorMode = 'light',api}:HookProvider) =
   const [wallet, setWallet] = useState<boolean | string>(false)
   const [modal, setModal] = useState<boolean>(false)
   const [method, setMethod] = useState<boolean | string>(false)
+  const [_api, setApi] = useState(api);
+  const changeApi = (api:string) => {
+    setApi(api)
+  }
   const [wax, setWax] = useState(new waxjs.WaxJS({
     rpcEndpoint: 'https://wax.greymass.com',
     tryAutoLogin: ( localStorage.getItem('login') === '1' ? true : false )
@@ -182,7 +186,8 @@ const HookProvider = ({children,network,colorMode = 'light',api}:HookProvider) =
         login,
         link,
         network: rpc,
-        api,
+        api: _api,
+        changeApi,
         colorMode: theme,
         changeRPC,
         changeTheme

@@ -4,7 +4,7 @@ interface HookProvider {
     children: any;
     network: 'mainnet' | 'testnet';
     colorMode?: 'dark' | 'light';
-    api?: 'string';
+    api?: string;
 }
 declare const HookProvider: ({ children, network, colorMode, api }: HookProvider) => JSX.Element;
 export default HookProvider;

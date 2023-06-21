@@ -80,18 +80,18 @@ const Modal = () => {
                 <div className='anchor_qr'>
       
                   {loginLink !== '' ? 
-                  <div className="qr-code-anchor-login">
+                  <div style={context.colorMode === 'dark' ? {background: "#FFF"} : {background: '#1a1b1f'}} className="qr-code-anchor-login">
                         <QRCode 
                             removeQrCodeBehindLogo
                             logoPaddingStyle={'circle'}
                             qrStyle={'dots'}
-                            fgColor={context.colorMode === 'dark' ? '#FFF' : 'black'}
+                            fgColor={context.colorMode !== 'dark' ? '#FFF' : 'black'}
                             ecLevel={'Q'}
                             logoWidth={70}
                             quietZone={5}
                             logoImage={'https://www.greymass.com/_app/immutable/assets/anchor-logo-58487e5c.svg'}
                             size={250}
-                            bgColor={context.colorMode === "dark" ? '#1a1b1f' : '#FFF'}
+                            bgColor={context.colorMode !== "dark" ? '#1a1b1f' : '#FFF'}
                             value={loginLink}
                             eyeRadius={[
                             [10, 10, 0, 10], // top/left eye
