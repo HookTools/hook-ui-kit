@@ -81,7 +81,7 @@ const Modal = () => {
       
                   {loginLink !== '' ? 
                   <div style={context.colorMode === 'dark' ? {background: "#FFF"} : {background: '#1a1b1f'}} className="qr-code-anchor-login">
-                        <QRCode 
+                        {/* <QRCode 
                             removeQrCodeBehindLogo
                             logoPaddingStyle={'circle'}
                             qrStyle={'dots'}
@@ -102,7 +102,7 @@ const Modal = () => {
                             "#3650a2","#3650a2","#3650a2"
                             ]}
                             
-                        />
+                        /> */}
                   </div>
                     : 
                     <div className='qr_loader'></div>

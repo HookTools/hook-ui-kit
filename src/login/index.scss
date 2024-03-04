@@ -10,7 +10,7 @@ $width: 650px;
 $height: 450px;
 
 body .anchor-link-active{
-  display: none !important;
+  display: var(--login) !important;
 }
 
 .login-div{

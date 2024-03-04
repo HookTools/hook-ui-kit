@@ -29,10 +29,14 @@ const HookProvider = ({children,network,colorMode = 'light',api}:HookProvider) =
     document.body.style.setProperty('--walletBtn',`var(--walletBtn-${theme})`)
     document.body.style.setProperty('--line',`var(--line-${theme})`)
   },[theme])
+
   const changeTheme = (theme:'dark' | 'light') => {
     setTheme(theme)
   }
   const [wallet, setWallet] = useState<boolean | string>(false)
+  useEffect(() => {
+    document.body.style.setProperty('--login', `var(--login-${wallet ? 'true' : 'false'})`)
+  },[wallet])
   const [modal, setModal] = useState<boolean>(false)
   const [method, setMethod] = useState<boolean | string>(false)
   const [_api, setApi] = useState(api);

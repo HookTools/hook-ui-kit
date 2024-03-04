@@ -18,4 +18,9 @@
     --background: var(--background-dark);
     --walletBtn: var(--walletBtn-dark);
     --line: var(--line-dark);
+
+    --login-true: flex;
+    --login-false: none;
+
+    --login: var(--login-false);
 }
